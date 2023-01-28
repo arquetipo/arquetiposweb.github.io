@@ -1,2 +1,113 @@
-# arquetiposweb.github.io
-Proyect website
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.grid{
+	padding:0px;
+	margin:0px;
+	display:grid;
+	border:1px dashed;
+	gap:5px;
+	height:100%;
+	grid-template-areas:
+
+ "head head head head"
+ "side mai mai mai"
+ "side pho buto buto"
+ "fot fot fot fot"
+	;
+	animation:po 2s;
+	
+
+
+
+}
+
+@media(max-width:800px){
+	.grid{
+	
+	background-color:black; 
+	padding:0px;
+	margin:0px;
+	display:grid;
+	border:1px dashed;
+	gap:5px;
+	height:100%;
+	grid-template-areas:
+ "head head "
+ "side mai "
+ "head mai"
+ "side pho "
+ "buto buto"
+ "fot fot"
+	;
+
+}
+}
+
+
+
+.head{
+	background-color:red;
+	grid-area:head;
+}
+.side{
+	background-color:black;
+	grid-area:side;
+}
+.mai{
+	background-color:blue;
+	grid-area:mai;
+}
+.pho{
+	background-color:green;
+	grid-area:pho;
+}
+.buto{
+	background-color:grey;
+	grid-area:buto;
+}
+.fot{
+	background-color:yellow;
+	grid-area:fot;
+}
+.grid > div {
+
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+<div class="grid">
+
+<div class="head">
+
+
+</div>
+<div class="side">
+
+
+</div>
+<div class="mai">
+
+
+</div>
+<div class="pho">
+
+
+</div>
+<div class="buto">
+
+
+</div>
+<div class="fot">
+
+
+</div>
+
+</div>
+</body>
+</html>
