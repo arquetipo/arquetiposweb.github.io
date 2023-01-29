@@ -3,22 +3,36 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:url"                content="https://arquetiposweb.github.io/index.html" />
+<meta property="og:type"               content="website" />
+<meta property="og:title"              content="Obten tu p&aacute;gina web ahora!" />
+<meta property="og:description"        content="arquetipos web" />
+<meta property="og:image"              content="https://arquetiposweb.github.io/img/ome.jpg" />
 <style>
-*{padding:0;margin:0;}
+	#call{
+		width:100px;
+		height:100px;
+		position:fixed;
+		bottom:3%;
+		right:1%;
+		background-image:url("wha.png");
+		background-size:cover;
+		background-position:center;
+		background-repeat:no-repeat;
+	}
+*{padding:0;margin:0; font-family:system-ui; }
 .grid{
 	padding:0px;
 	margin:0px;
 	display:grid;
-	border:1px dashed;
 	gap:5px;
-	height:400%;
+	height:auto;
 	grid-template-areas:
 
  "head head head head"
  "ban ban ban ban"
  "side pho buto buto"
  "side mai mai mai"
- 
  "fot fot fot fot"
 	;
 	animation:po 2s;
@@ -36,9 +50,9 @@
 	margin:0px;
 	height: 79%;
 	display:block;
-	border:1px dashed;
+	
 	gap:5px;
-	height:100%;
+	height:auto;
 	grid-template-areas:
  "head head "
  "side mai "
@@ -56,9 +70,9 @@
 	margin:0px;
 	height: 79%;
 	display:block;
-	border:1px dashed;
+	
 	gap:5px;
-	height:100%;
+	height:auto;
 	grid-template-areas:
  "head head "
  "side mai "
@@ -76,43 +90,89 @@
 .head{
 	background-color:grey;
 	grid-area:head;
-	height:100%;
-z-index:1;
-background-image:url("ome.jpg");
-background-position:center;
-background-size:cover;
-background-repeat:no-repeat;
-
+	
 }
 .ban{
 	background-color:white;
-	grid-area:side;
+	grid-area:ban;
+	padding:30px;
+
+	justify-content:center;
+	
+font-family:sans-serif;
+font-size:1.5em;
+
+}
+.ban img{
+width:50%;
+
+}
+@media(max-width:800px){
+.ban img{
+width:80%;
+
+}
 }
 .side{
-	background-color:#00bcd4;
+	background-color:rgba(0,0,0,0.2);
 	grid-area:side;
+	box-shadow:inset 1px 1px 20px 0px #a5bac7;
 }
 .mai{
-	background-color:#353950;
+	background-color:rgba(0,0,0,0.2);
 	grid-area:mai;
+	box-shadow:inset 1px 1px 20px 0px #a5bac7;
 }
 .pho{
-	background-color:#ffeb3b;
+	background-color:rgb(0 0 0 / 2%);
 	grid-area:pho;
+	box-shadow:inset 1px 1px 20px 0px #d8f10c6b;
 }
 .buto{
-	background-color:#e91e63;
+	background-color:rgba(0,0,0,0.2);
 	grid-area:buto;
+	box-shadow:inset 1px 1px 20px 0px #a5bac7;
 }
 .fot{
 	background-color:#333638;
 	grid-area:fot;
+	height:700px;
+	color:grey;
 }
 .grid > div {
 
   text-align: center;
-  padding: 20px 0;
+  
   font-size: 30px;
+}
+#pre{
+	width:100%;
+	height:50px;
+	background-color:#5a9bd5;
+position: fixed;
+	z-index:3;
+top:0px;
+}
+#pre p{
+	color:white;
+	float:left;
+	margin-left:60px;
+	margin-top:10px;
+}
+#pre ul {
+	float:right;
+	width:100%;
+	height:50px;
+display:block;
+}
+
+#pre li{
+	font-size:1em;
+	font-family:sans-serif;
+	color:white;
+	width:17%;
+	height:50px;
+display:inline-block;
 }
 #nav {
 	width:100%;
@@ -120,12 +180,22 @@ background-repeat:no-repeat;
 	background-color:black;
 	position:fixed;
 	z-index:2;
-top:0px;
+top:50px;
 }
+
 #nav ul {
 	width:100%;
 	height:50px;
+	
 display:block;
+}
+@media(max-width:800px){
+#nav ul {
+	width:100%;
+	height:50px;
+	
+display:none;
+}
 }
 
 #nav li{
@@ -136,15 +206,104 @@ display:block;
 	height:50px;
 display:inline-block;
 }
+#cuadro
+	width:10%;
+	height:40px;
+display:none;
+}
 
-#
+#lineas{
+	width:100%;
+	height:7px;
+	display:block;
+}
+@media(max-width:800px){
+	#cuadro{
+	width:10%;
+	height:40px;
+	
+	float:right;
+display:block;
+}
+
+#lineas{
+
+	width:100%;
+	height:7px;
+margin:7px;
+	background-color:white;
+	display:block;
+}
+
+
+}
+#capa{
+	height:700px;
+background-image:url("omes.jpg");
+background-position:center;
+background-size:contain;
+background-repeat:no-repeat;
+
+}
+#menu{
+	background-color:black;
+	color:white;
+	width:100%;
+	height:60%;
+	position:fixed;
+	top:90px;
+	z-index:100;
+	display:none;
+}
+#menu ul{
+	width:100%;
+	height:60%;
+	color:white;
+
+
+}
+#menu li{
+	display:inline-block;
+	width:90%;
+	margin-top:20px;
+	font-family:system-ui;
+
+
+}
 </style>
 </head>
 <body>
+<div id="call"></div>
 <div class="grid">
+		<div id="pre"><p>
+			ARQUETIPOS WEB</p>
+	<img src="">
+	<img src="">
+	<img src="">
+</div>
+<div id="menu" onclick="cierra()">
+	<ul>
+		<li>
+			inicio
+		</li>
+		<li>
+			servicios
+		</li>
+		<li>
+			contacto
+		</li>
+		<li>
+			conosenos
+		</li>
 
+	</ul>
+</div>
 <div class="head">
-	<div id="capa"></div>
+
+	<div id="capa">
+
+	</div>
+		
 <div id="nav">
 	<ul>
 		<li>inicio</li>
@@ -152,33 +311,79 @@ display:inline-block;
 		<li>contacto</li>
 		<li>conosenos</li>
 	</ul>
+	<script>
+		function abre(){
+			var btn =document.getElementById("menu").style.display="block";
+
+
+		}
+		function cierra(){
+			var btm =document.getElementById("menu").style.display="none";
+		
+
+		}
+	</script>
+	<div id="cuadro" onclick="abre()">
+		<div id="lineas">
+			
+		</div>
+		<div id="lineas">
+			
+		</div>
+		<div id="lineas">
+			
+		</div>
+	</div>
 </div>
 
 </div>
 
 <div class="ban">
 
-
+Arquetipos web es un emprendimiento dedicado al desarrollo de soluciones informáticas.
+<br><br><center><img src="logos.jpg"></center>
 </div>
 
 <div class="side">
+	<br>
+<strong>En el plano personal</strong><br><br>
+Gestionar planes de acción, amplia el alcance de su perforan empresarial.
+
+
+<br>
+<br>
+
+<br>
+
 
 
 </div>
-<div class="mai">
+<div class="mai"><strong>
+	<br><br>
+En el plano empresarial</strong><br><br>
 
-
+Disponer de una página web es esencial para las empresas debido a que con ello podrán hacer mejor uso se la información que corresponde a cada entidad, permitiéndole fortalecer la credibilidad.
+<br><br>
 </div>
 <div class="pho">
-
-
+<br>
+<strong>
+El público objetivo</strong> <br><br>Es nuestro compromio como compañia ofrecer a nuestros clientes el mejor servicio y ayudar que nuestros clientes  identifiquen, gestionen y controlen los riesgos legales y operativos a los que está expuesta su empresa y de esa forma  cumplir con las normas y regulaciones que son obligatorias para sus empresas y negocios.
+<br><br>
 </div>
 <div class="buto">
-
-
+<br>
+<strong>En el plano organizativo</strong>
+<br><br>
+El Decreto 2150 de Diciembre del 2017, establece unas obligaciones y requisitos que las entidades sin ánimo de lu-
+cro (ESAL) deben tener en cuenta si quieren pertenecer al régimen tributario especial, entre estas contar con una página
+web en la que publiquen cierta información, lo que busca darles transparencia a los procesos de calificación, permanencia y
+actualización.
+<br><br>
 </div>
 <div class="fot">
 
+soporte productos proyectos
 
 </div>
 
